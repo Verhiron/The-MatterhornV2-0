@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Matterhorn</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <script>
+        function scrollToInfo(){
+            document.querySelector('#info').scrollIntoView({behavior: 'smooth'});
+        }
+        function submitForm(){
+            let email = document.getElementById('email-input').value
+            alert("Thanks for signing up! an email has been sent to: '" + email + "'");
+            document.getElementById('email-input').value = '';
+        }
+
+    </script>
+
+    <div class="banner">
+        <div class="banner-info">
+            <a href="#!"><img src="./assets/images/logo.png"> </a>
+            <h2 class="text-center">The Jewel of the Swiss Alps</h2>
+            <hr>
+            <h1>The Matterhorn</h1>
+            <div class="banner-scroll bounce">
+                <a href="javascript: scrollToInfo();" class="scroll"><i class="fas fa-angle-double-down fa-3x"></i></a>
+            </div>
+            <div class="banner-socials">
+                <a href="#!"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#!"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lakes-info" id="info">
+        <div class="lakes-info-container">
+            <h2>Zermatt - Lakes</h2>
+            <hr>
+            <div class="lakes-info-items">
+                <p>At 4,478 metres, the majestic Matterhorn – certainly the most famous mountain in Europe – looms over the breathtaking Alpine panorama. This Switzerland landmark is at the border of the western Swiss canton of Valais between Zermatt and the Italian resort of Breuil-Cervinia, and offers a paradise for all nature-lovers looking for peace and quiet.</p>
+                <p>Zermatt lies at the foot of the Matterhorn. The town's touristic development is closely linked to what is most probably the world's most famous mountain. The vacation destination is a car-free zone, has preserved its original character and offers nearly unlimited possibilities as far as excursions are concerned.</p>
+                <p>Zermatt has over 150 lakes. Some of the lakes are inviting swimming locations; others reflect the Matterhorn. Stellisee and Riffelsee are world-famous, because they reflect the Matterhorn on the water surface. Zermatt’s beach is on Leisee. And Schwarzsee is home to idyllic quiet waters and the Maria zum Schnee chapel. The lakes are places where one can relax.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lakes-images">
+        <div class="lakes-images-container">
+            <div class="lakes-image-items">
+                <img class="img-affect" src="./assets/images/joshua-earle-p1VNPzW6c9k-unsplash.jpg">
+                <img class="img-affect mobile-visibility" src="./assets/images/joao-branco-zaPJUFvLEhI-unsplash.jpg">
+                <img class="img-affect mobile-visibility" src="./assets/images/angelo-burgener-49EcSOfJ31M-unsplash.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="section-1-container">
+            <div class="section-1-items mobile-padding">
+                <h3>Become The Best Version Of You!</h3>
+                <hr>
+                <p>The excursion mountains beckon: Gornergrat (3,089 m), Matterhorn glacier paradise (3,883 m), and Rothorn (3,103 m). On all of these peaks as well as on the way to each and at each of the stops in between, the mountain panorama presents itself in a breath-taking display. For example, the Matterhorn from its very different and most beautiful sides.</p>
+                <button class="btn cto-btn">Find Out More | <i class="fa fa-arrow-right"></i></button>
+            </div>
+            <div class="section-1-items mobile-no-bg">
+                <img src="./assets/images/joshua-earle--87JyMb9ZfU-unsplash.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="section-1-container section-1-column-change">
+            <div class="section-1-items mobile-no-bg">
+                <img src="./assets/images/pexels-christian-buergi-6344695.jpg">
+            </div>
+            <div class="section-1-items mobile-padding">
+                <h3>Night Entertainment</h3>
+                <hr>
+                <h4>It's Going To Be A Long Evening...</h4>
+                <p>Once you’ve experienced Zermatt's nightlife, you know one thing for sure - it's incredible. As the end of the day approaches, the village beckons you in, with more than 100 restaurants and numerous bars to enjoy. Both locals and international visitors meet up here. Whether you’re looking for a quiet evening, or an opportunity to let your hair down to live music, you’ll have an evening to remember.</p>
+                <button class="btn cto-btn">View Nightlife | <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="section-1-container">
+            <div class="section-1-items mobile-padding">
+                <h3>Events</h3>
+                <hr>
+                <p>There is always something happening in Zermatt – Matterhorn. Whether sports, music, fashion or cuisine, one will certainly find an event to match every occasion. </p>
+                <button class="btn cto-btn">Find Out More | <i class="fa fa-arrow-right"></i></button>
+            </div>
+            <div class="section-1-items mobile-no-bg">
+                <img src="./assets/images/alexander-kagan-rkji9hajIeM-unsplash.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <img class="section-2-item mobile-visibility" src="./assets/images/samuel-ferrara-FGEHnEMaZnE-unsplash.jpg">
+
+        <div class="section-2-item section-2-mobile-input">
+            <div class="newsletter-container">
+                <div class="input-container">
+                    <div class="heading-container">
+                        <h3>Join Our Newsletter</h3>
+                        <hr>
+                    </div>
+                    <input id="email-input" type="email" class="input-email" placeholder="Enter Email">
+                    <button class="btn-sm cto-btn" onclick="submitForm()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <img class="section-2-item" src="./assets/images/florin-wellauer-E_bOmhCguC0-unsplash.jpg">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h4>Contact Us</h4>
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Lorem ipsum Address</li>
+                <li>TEL: 01234567890</li>
+                <li>loremipsum@email.com</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h4>Official Climbers App</h4>
+            <div class="footer-inner-container">
+                <div class="footer-container-inner-items">
+                    <img src="./assets/images/get-on-google-play.png" class="google-play-img">
+                </div>
+                <div class="footer-container-inner-items">
+                    <img src="./assets/images/get-on-app-store.png" class="app-store-img">
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <h4>Map & Travel Instructions</h4>
+            <img src="./assets/images/footer-map.png">
+        </div>
+    </footer>
+
+</body>
+</html>
